@@ -1,0 +1,30 @@
+{
+  "name": "fizzy-tickets",
+  "version": "1.0.0",
+  "description": "Advanced, scalable, multi-guild Discord Ticket Bot with MongoDB and Discord.js v14",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node tests/syntaxCheck.js"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "ticket-bot",
+    "mongodb",
+    "mongoose",
+    "v14"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "cron": "^3.5.0",
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.17.3",
+    "mongoose": "^8.9.5",
+    "yaml": "^2.7.0"
+  }
+}

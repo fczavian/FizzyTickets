@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment and Credentials
+config.yml
+.env
+.env.*
+
+# Generated Transcripts and Logs
+transcripts/
+*.log
+npm-debug.log*
+
+# Tests & Dev Docs
+tests/
+SKILL.md
+
+# System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,83 @@
+# ====================================================================
+# FizzyTickets - Configuration File Template
+# ====================================================================
+
+bot:
+  # Discord bot credentials
+  token: "YOUR_DISCORD_BOT_TOKEN"
+  clientId: "YOUR_CLIENT_ID"
+
+  # MongoDB connection string
+  mongoUri: "mongodb://127.0.0.1:27017/fizzytickets"
+
+  # Default embed accent color (Hex format)
+  embedColor: "#5865F2"
+
+  # Optional developer guild ID (registers slash commands instantly for testing)
+  devGuildId: ""
+
+# ====================================================================
+# System Feature Toggles & Options
+# ====================================================================
+
+features:
+  # Ticket Claiming System
+  claiming:
+    enabled: true
+    allowStaffUnclaim: true
+    # When true, other staff cannot type in ticket once claimed (except admins)
+    restrictToClaimerOnly: false
+
+  # Category-Specific Staff Roles
+  perCategoryRoles:
+    enabled: true # If false, falls back to server-wide support roles for every category
+
+  # Ticket Priority System
+  priority:
+    enabled: true
+    defaultPriority: "MEDIUM" # Options: LOW, MEDIUM, HIGH, URGENT
+    allowStaffChange: true
+
+  # Modal Form Prompts (Popups on Ticket Selection)
+  modals:
+    enabled: true
+    requireSubject: true
+    requireDescription: true
+
+  # Transcripts & Logging
+  transcripts:
+    enabled: true
+    saveToLogChannel: true
+    dmToUser: true
+    format: "html" # Options: html, txt
+
+  # Background Inactivity Monitor
+  inactivity:
+    enabled: true
+    checkIntervalMinutes: 10
+    warningHours: 24
+    autoCloseHours: 48
+
+  # Member Management (Add / Remove users from active tickets)
+  memberManagement:
+    enabled: true
+    allowStaffOnly: true
+
+  # Ticket Reopen System
+  reopen:
+    enabled: true
+    reopenWindowMinutes: 60
+
+  # Ticket Rate Limits & Caps
+  ticketLimits:
+    enabled: true
+    maxOpenTicketsPerUser: 3
+
+  # User Blacklist System
+  blacklist:
+    enabled: true
+
+  # Cooldowns (anti-spam between ticket creations)
+  cooldowns:
+    enabled: true
+    defaultCooldownSeconds: 15
