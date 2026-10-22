@@ -1,6 +1,7 @@
 <div align="center">
 
 # 🎫 FizzyTickets
+## Built & maintained by [FizzyStudio](https://fizzystudio.xyz).
 
 **A modern, multi-guild Discord ticket system powered by Discord.js v14 and MongoDB.**
 
